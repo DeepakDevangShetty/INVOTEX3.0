@@ -1,0 +1,112 @@
+
+        
+.banner_image{
+padding-top:120px;
+padding-bottom:250px;
+color:#353935;
+background:url("banner-img.jpg") no-repeat center center;
+background-size:cover;
+text-align:center;
+}
+
+
+.banner_content{
+position:relative;
+padding-top:3%;
+padding-bottom:3%;
+margin-top:12%;
+margin-bottom:12%;
+background-color: #9d9d9d (183, 193, 172, 0.7);
+max-width:660px;
+}
+
+.btn-group {
+            margin-top: 40px;
+        }
+        
+        .btn-group .btn {
+            margin-right: 40px;
+        }
+        
+        .btn-group .btn:last-child {
+            margin-right: 0;
+        }
+        
+        .btn-group .btn-custom {
+            background-color: #191d1a;
+            color: #fff;
+        }
+        
+        
+        .sub-heading{
+            padding-right: 15px;
+            padding-top:12px;
+            font-size: 15px;
+            
+        }     
+              
+        footer{
+padding :10px 0;
+background-color:#101010;
+color:#9d9d9d;
+bottom:0px;
+width:100%
+}
+
+
+.navbar {
+  height: 70px;
+  background-color: #686868e1;
+  .navigation-bar {
+    width: 100%;  /* i'm assuming full width */
+    height: 80px; /* change it to desired width */
+    background-color: rgb(87, 87, 87); /* change to desired color */
+}
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+}
+.navigation-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    height: 80px;        /* if you want it to take the full height of the bar */
+    line-height: 80px;    /* if you want it vertically middle of the navbar */
+}
+  
+}
+
+@media(max-width:768px) {
+    #banner_content {
+        padding-bottom: 15%;
+    }
+    footer{
+        text-align:left;
+    }
+}
+
+
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+ani {
+  
+  animation: slide-up 0.3s ease-in-out;
+}
+
+.logo{
+    color:#353935;
+    font-family:Algerian;
+}
