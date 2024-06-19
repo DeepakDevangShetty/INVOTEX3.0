@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  overflow-x: hidden; /* Prevent horizontal scroll due to parallax effect */
+}
+.parallax-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  overflow: hidden;
+}
+.parallax-bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("banner-img.jpg"); /* Replace "background.jpg" with your image path */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.parallax-bg:after {
+ content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(246, 5, 5, 0.5), rgba(0, 0, 0, 0.5)); /* Add a semi-transparent overlay */
+}
+.parallax-bg .content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  animation: fade-in 1s ease-in-out;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+ to {
+    opacity: 1;
+  }
+}
+h1,
+h2 {
+  margin: 0;
+}
+main {
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(149, 141, 141, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: slide-up 0.7s ease-in-out;
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+section {
+  margin-bottom: 20px;
+  animation: fade-in 0.7s ease-in-out;
+}
+form label,
+form input,
+form button {
+  display: block;
+  margin-bottom: 10px;
+}
+form input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #EDEADE;
+}
+form button {
+    background-color: #333;
+  color: #fff;
+  padding: 10px 25px ;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th,
+table td {
+ padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ccc
+}
+#availabilityStatus {
+  margin-top: 10px;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+  section {
+    margin-bottom: 50px;
+  }
+}
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 25px ;
+  border: none;
+
+  border-radius: 3px;
+
+  cursor: pointer;
+
+}
